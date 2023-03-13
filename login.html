@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img-container">
+        <img src="imagens/facebook-logo.png" alt="Logo do facebook" height="35px">
+    </div>
+
+    <form>
+        <h1 class="text center">Criar uma nova conta</h1>
+        <p class="text center">É fácil e rápido</p>
+
+        <div class="nomeEmail">
+            <input name="nome" id="nome" type="text" placeholder="Nome">
+            <input name="sobrenome" id="sobrenome" type="text" placeholder="Sobrenome">
+        </div>
+
+        <div class="padd-10">
+            <input name="email" id="email" type="email" placeholder="Email">
+        </div>
+
+        <div class="padd-10">
+            <input id="senha" name="senha" type="password" placeholder="Senha">
+        </div>
+
+        <p>Data de Nascimento:</p>
+
+        <div>
+            <input type="date" id="data" name="data">
+        </div>
+        <p>Gênero:</p>
+        <div class="center">
+            <input id="feminino" name="genero" type="radio">
+            <label for="feminino">Feminino</label>
+        
+            <input id="masculino" name="genero" type="radio">
+            <label for="">Masculino</label>
+            <input type="radio" id="outro" name="genero">
+            <label for="Outro">Outro</label>
+        </div>
+
+        <button>Enviar Cadastro</button>
+        <p class="center"><a href="#">Já tem uma conta?</a></p>
+
+    </form>
+    
+</body>
+</html>
