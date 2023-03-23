@@ -9,21 +9,27 @@ nav a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     /* background-color: aquamarine; */
-    width: 22%;
+    width: 20%;
     padding-top: 10px;
     padding-bottom: 10px; 
     font-size: 17px;
     text-align: center;
 
     padding: 5px;
-    width: 18%;
+    width: 15%;
     display: inline-block; 
 }
 
+#logo{
+    float: left;
+    background-color: rgb(223, 158, 223);
+    padding: 15px;
+}
+
 #fundo{
-    height: 600px;
-    background: rgb(148,63,251);
-    background: linear-gradient(288deg, rgba(148,63,251,1) 0%, rgba(170,57,114,1) 44%, rgba(233,214,218,1) 80%);
+    height: 500px;
+    background: rgb(160,90,245);
+    background: linear-gradient(288deg, rgba(160,90,245,1) 0%, rgba(163,59,161,1) 23%, rgba(170,57,114,1) 44%, rgba(233,214,218,1) 80%);
     color: antiquewhite;
     text-align: right;  
     position: relative;
@@ -46,30 +52,41 @@ nav a{
 } */
 
 #container, #container2{
-    background-color: rgb(248, 231, 210);
+    /* background-color: rgb(248, 231, 210); */
     display: flex;
     justify-content: center;
 
 }
 
-#container > div{
-    background-color: rgb(182, 243, 223);
-    margin: 10px;
-    padding: 20px;
-    width: 46%;
-    height: 400px;
+#container > #box1{
+    /* background-color: rgb(182, 243, 223); */
+    margin: 20px;
+    padding: 60px;
+    width: 65%;
+    height: 350px;
+    text-align: right;
+    
+}
+
+#container > #box2{
+    /* background-color: rgb(182, 243, 223); */
+    margin: 20px;
+    padding: 15px;
+    width: 35%;
+    height: 370px;
+    text-align: center;
+    
+}
+
+#container > div > img{
+    height: 300px;
+    border-radius: 44px;
 }
 
 #texto{
     background-color: rgb(110, 199, 194);
     width: 97%;
     height: 400px;
-}
-
-#logo{
-    float: left;
-    background-color: rgb(223, 158, 223);
-    padding: 15px;
 }
 
 
@@ -86,15 +103,17 @@ nav a{
 </head>
 <body>
     <div id="logo">Logo</div>
-    <nav><a href="#">Home</a><a href="#">Quem somos</a><a href="#">Contato</a></nav>
+    <nav><a href="#">Home</a><a href="#">Receitas</a><a href="#">Quem somos</a><a href="#">Contato</a></nav>
     <main>
         <div id="fundo">
             <h1>Título</h1>      
         </div>
 
         <div id="container">
-            <div id="box1">box1</div>
-            <div id="box2">box2</div>
+            <div id="box1"><p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae laborum quos, at ipsam mollitia nesciunt, debitis placeat reiciendis corrupti odio in explicabo amet a officia ut, possimus saepe voluptatibus sunt iusto delectus id porro rem. Ipsam voluptatibus dolorum, placeat, ab tenetur dolorem culpa libero saepe sequi consequatur veniam, veritatis provident! possimus saepe voluptatibus sunt iusto delectus id porro rem. Ipsam voluptatibus dolorum, placeat, ab tenetur dolorem culpa libero saepe sequi consequatur veniam, veritatis provident! placeat, ab tenetur dolorem culpa libero saepe sequi consequatur veniam, veritatis provident! possimus saepe voluptatibus sunt iusto delectus id porro rem. Ipsam voluptatibus dolorum, placeat, ab tenetur dolorem culpa libero saepe sequi consequatur veniam, veritatis provident! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla fuga consequatur consectetur sunt quasi veritatis laborum eius molestiae quae dolorum architecto minima dolore esse, dicta cum, reprehenderit voluptatum ipsam? reprehenderit voluptatum ipsam?... <a href="#">Saiba mais</a></p></div>
+            <div id="box2">
+                <img src="image/crossaint.jpg" alt="">
+            </div>
         </div>
 
         <div id="container2">
