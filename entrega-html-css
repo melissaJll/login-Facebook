@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+nav{
+    text-align: right;
+    /* background-color: blue; */
+}
+nav a{
+    color: rgb(31, 29, 29);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: aquamarine; */
+    width: 22%;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    font-size: 17px;
+    text-align: center;
+
+    padding: 5px;
+    width: 18%;
+    display: inline-block; 
+}
+
+#fundo{
+    height: 600px;
+    background: rgb(148,63,251);
+    background: linear-gradient(288deg, rgba(148,63,251,1) 0%, rgba(170,57,114,1) 44%, rgba(233,214,218,1) 80%);
+    color: antiquewhite;
+    text-align: right;  
+    position: relative;
+}
+
+#fundo > h1{
+
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: right;
+
+    bottom: 350px;
+}
+
+/* #fundo p, h1{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+} */
+
+#container, #container2{
+    background-color: rgb(248, 231, 210);
+    display: flex;
+    justify-content: center;
+
+}
+
+#container > div{
+    background-color: rgb(182, 243, 223);
+    margin: 10px;
+    padding: 20px;
+    width: 46%;
+    height: 400px;
+}
+
+#texto{
+    background-color: rgb(110, 199, 194);
+    width: 97%;
+    height: 400px;
+}
+
+#logo{
+    float: left;
+    background-color: rgb(223, 158, 223);
+    padding: 15px;
+}
+
+
+----HTML-------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site - exercicio</title>
+</head>
+<body>
+    <div id="logo">Logo</div>
+    <nav><a href="#">Home</a><a href="#">Quem somos</a><a href="#">Contato</a></nav>
+    <main>
+        <div id="fundo">
+            <h1>Título</h1>      
+        </div>
+
+        <div id="container">
+            <div id="box1">box1</div>
+            <div id="box2">box2</div>
+        </div>
+
+        <div id="container2">
+            <div id="texto">
+                <p>Texto Teste</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Rubik+Iso&display=swap');
+body{
+    background-image:url(../imagens/tarde.jpg);
+    background-size: cover;
+}
+#container{
+    background-color: rgba(236, 232, 219, 0.808);
+    /* centralizar um bloco preciso de widht e margin */
+
+    /* Definindo largura e
+    margem automática, o resultado
+    é a centralização da caixa */
+    width: 80%;
+    margin: auto;
+
+    /* limitando largura maxima*/
+    max-width: 1200px;
+
+    /* limitando a largura minima */
+    min-width: 600px;
+
+    padding: 20px;
+    border-radius: 10px;
+    /* horizontal(X) vertical(Y) blur cor */
+    box-shadow: 5px 5px 50px rgb(15, 187, 130);
+}
+
+img{
+    /* Torna imagem flexivel/responsivo */
+    max-width: 100%;
+}
+
+h1{
+    background: linear-gradient(45deg,teal,rgb(115, 141, 226));
+    font-family: 'Rubik Iso', cursive;
+    text-align: center;
+    font-size: 50px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 4px;
+}
+h2 {
+    background-image: url(../imagens/oriental-tiles.png);
+    color: white;
+    padding: 10px;
+    /* border-left-width: 20px;
+    border-left-color: yellow;
+    border-left-style: solid; */
+    border-left: 20px yellow solid;
+    
+    /* border-right-width: 20px;
+    border-right-color: yellow;
+    border-right-style: solid; */
+    border-right: solid 20px yellow;
+}
+
+/* Seletor CLASSE */
+.centralizar { text-align: center; }
+.sombra-texto { text-shadow: black 2px 2px 3px; }
+.borda-arredondada { border-radius: 8px; }
+.destaque {
+    background-color: yellow;
+    
+    /* Primeiro Valor (cima/embaixo)
+    Segundo Valor (esquerda/direita) */
+
+    /* padding: 2px 4px; */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    border: solid 2px red;
+}
+
+/* Regras para o menu e seus links */
+
+nav { text-align: right; }
+
+/* Regra de estado inicial do link
+Seletor DESCENDENTE */
+nav a { 
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+
+    /* Altera o comportamento
+    Box Model CSS */
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+/* Regra de acionamento do link
+Seletor DESCENDENTE + PSEUDO-CLASSE */
+/* hover: mouse
+    focus: dedo e tab */
+nav a:hover, nav a:focus{
+    background-color: darkblue;
+    transform: translateY(-10px);
+    /* transform: rotateZ(90deg) translateY(100px); */
+}
+
+figure{
+    text-align: center;
+    background-color: rgba(68, 136, 85, 0.753);
+
+    /* Tornando o elemento referência para o posicionamento */
+    position: relative;
+
+    margin: 0 auto; /* css reset */
+    max-width: 419px; /*o espaço bloco invisivel agora ocupa a largura da imagem(205x419)*/
+}
+figcaption{
+    width: 100%; /*devolver a area do figcaption(parece block ocupa linha) que foi perdido com absolute*/
+    font-weight: bold;
+    background-color: rgba(240, 234, 234, 0.733);
+    position: absolute; /*deixa solta para posicionamento*/
+    
+    /* Coodenadas em relção ao body, top = inicio da pagina*/
+    /*bottom: 0; em relação ao tamanho atual da pagina
+    se afasta de baixo para cima*/
+
+    bottom: 90px;
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+figure{
+    filter: grayscale(100%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+figure:hover{
+    filter: none;
+    transform: scale(0.9) rotate(-2deg); /*Escala 1 é o tamanho normal*/
+    
+}
+
+/* seletor descendente */
+.centralizar img{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+ul{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul li{
+    color: rgb(211, 50, 22);
+}
+ /* formatando primeiro li descendente de ul */
+ul li:first-child{
+    color: rgb(90, 134, 2);
+}
+
+ul li:last-child{
+    color: black;
+}
+ul li:nth-child(4){
+    color: rgb(128, 36, 214);
+}
+
+/* ul li:nth-child(odd){
+    background-color: rgb(221, 194, 103);
+}
+ul li:nth-child(even){
+    background-color: cornflowerblue;
+} */
+
+/* a partir do 3 (n + 3) */
+/* do 3 para atras (-n + 3) */
+ul li:nth-child(3n){
+    background-color: rgb(112, 224, 187);
+}
+
+.flutuar{
+    float: left;
+    margin: 10px;
+}
+
+/*Etapa 1: regra de animação*/
+@keyframes animaCores {
+    from{
+        background-color:cornflowerblue;
+        color: plum
+    }
+    to{
+        background-color: plum;
+        color: cornflowerblue
+    }
+}
+/* etapa 2: aplicar alguns elementos */
+.subtitulo, h3 {
+    animation-name: animaCores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#banner{
+    width: 450px;
+    margin: auto;
+    border: solid 2px;
+    overflow: hidden;
+}
+
+@keyframes animaBanner{
+    from{
+        transform: translate(-120px);
+    }
+    to{
+        transform: translate(440px) rotate(360deg);
+    }
+}
+
+#banner img{
+    /* border: solid 2px red; */
+    animation-name: animaBanner;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes expande{
+    from{
+        transform: scale(1.0);
+        background-color: rgba(86, 101, 131, 0.404);
+    }
+    to{
+        transform: scale(1.8);
+        background-color: rgba(72, 127, 228, 0.637);
+    }
+}
+
+aside{ /*ou id -> banner*/
+    position: relative;
+} 
+/* Referencia para absolute */
+
+#banner p{
+    will-change: transform;
+    position: absolute; /*deixa solta para posicionamento*/
+    
+    width: 100%;
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+
+    bottom: 40px;
+
+    font-family: 'Climate Crisis', cursive;
+    color: antiquewhite;
+    text-shadow: rgb(54, 54, 54) 1px 1px 1px;
+
+    animation-name: expande;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+
+html----------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Exemplo</title>
+
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+
+	<div id="container">
+        <h1>Senac Web</h1>
+            
+        <!-- Nav precisa estar na mesma linha para não dar espaço -->
+        <nav><a href="index.html">Home</a><a href="front-end.html">Front-End</a><a href="back-end.html">Back-End</a></nav>
+        
+            <h2 class="centralizar">Introdução</h2>
+            
+            <div class="centralizar">
+                <img src="imagens/destaque.jpg" alt="">
+            </div>
+
+            <p class="centralizar"> Desenvolvimento web é o termo utilizado para descrever o 
+            <span class="destaque">
+                desenvolvimento
+            </span>  de sites, na Internet ou numa <b class="destaque">intranet</b>. Este é o profissional que trabalha desenvolvendo websites, podendo ser um 
+            <b class="destaque borda-arredondada">Web Designer</b> (Desenvolvedor do Layout), ou Web Developer (Desenvolvedor de sistemas).
+            </p>
+            
+            <p>
+                O desenvolvimento refere-se a um processo de construção e testes do software especifico para a web, com a finalidade de se obter um conjunto de programas, que satisfazem as funções pretendidas, quer em termos de usabilidade dos usuários ou compatibilidade com outros programas existentes. O desenvolvimento web pode variar desde simples páginas estáticas a aplicações ricas, comércios eletrônicos ou redes sociais.
+            </p>	
+            
+            <h2>Editores</h2>
+            <ol>
+                <li>Notepad++</li>
+                <li>Visual Studio Code</li>
+                <li>Sublime Text</li>
+                <li class="sombra-texto">Brackets</li>
+            </ol>
+        
+            <h2>Referências</h2>
+            <ul>
+                <li><a href="http://www.w3c.br" target="_blank">W3C Brasil</a></li>
+                <li><a href="http://www.tableless.com.br" target="_blank">Tableless</a></li>
+                <li><a href="http://www.maujor.com" target="_blank">Maujor</a></li>
+            </ul>
+        
+            <p class="sombra-texto centralizar">
+                Todos os direitos reservados - 2023
+            </p>
+    </div>
+
+
+</body>
+</html>
+
