@@ -409,7 +409,7 @@ aside{ /*ou id -> banner*/
 }
 
 
-html----------------------------
+html--------------------------------------------------------------------------
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -465,6 +465,137 @@ html----------------------------
     </div>
 
 
+</body>
+</html>
+
+--------------------------------------------LAYOUT------------------
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        html{ font-size: 16px;}
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: beige;
+        }
+        #container{
+            background-color: aliceblue;
+            box-shadow: 0px 0px 6px black;
+            padding: 2%;
+        }
+
+        header{
+            background-color: rgb(45, 139, 233);
+            text-align: center;
+        }
+
+        /* CSS reset */
+        h1, h2, p{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background-color: rgb(245, 202, 83);
+        }
+
+        .colunaA{
+            background-color: rgb(89, 199, 166);
+        }
+        .colunaB{
+            background-color: rgb(230, 115, 70);
+        }
+        .colunaC{
+            background-color: rgba(230, 139, 189, 0.986);
+        }
+
+        footer{
+            background-color: rgb(158, 157, 157);
+        }
+
+        h2, p{ padding: 0.5rem;}
+
+        .colunaA, .colunaB,.colunaC {
+            min-height: 300px; /*o menor dos artigos mede 270, o verde*/
+
+        }
+
+            /* regras para tela a partir de 700px */
+        @media screen and (min-width: 700px){
+
+            header{ 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 70px;
+            }
+
+            nav{
+                width: 50%;
+                height: 40px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+
+                                <!-- Cabeçalho -->
+        <header>
+            <h1>CSS</h1>
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+
+                                <!-- Conteúdo -->
+<main>
+            <article class="colunaA">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati sunt culpa, temporibus nobis enim minima dolorem in quis odio, et nemo maiores accusamus vitae?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur..Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati sunt culpa, temporibus nobis enim minima dolorem in quis odio, et nemo maiores accusamus vitae?</p>
+            </article>
+
+            <article class="colunaB">
+                <h2>ColunaB </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at commodi porro maiores est harum, similique reprehenderit nobis consequuntur temporibus aperiam quibusdam repellendus illum corporis quos voluptas facilis, eveniet excepturi a impedit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae architecto voluptate nisi aliquam labore unde similique commodi, laboriosam obcaecati deleniti ex ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos?</p>
+            </article>
+
+            <article class="colunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at commodi porro maiores est harum, similique reprehenderit nobis consequuntur temporibus aperiam quibusdam repellendus illum corporis quos voluptas facilis, eveniet excepturi a impedit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae architecto voluptate nisi</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae architecto voluptate nisi aliquam labore unde similique commodi, laboriosam obcaecati</p>
+            </article>
+        </main>
+
+                                  <!-- Rodapé -->
+         <footer>
+            <h2>Design Responsivo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, facilis!</p>
+        </footer>
+
+    </div>
 </body>
 </html>
 
